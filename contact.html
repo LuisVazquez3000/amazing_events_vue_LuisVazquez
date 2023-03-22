@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>details</title>
+</head>
+<body>
+	<header class="header-nav">
+		<div class="logo">
+			<a href="./index.html"><img src="./assets/img/LogoAmazingEvents.png" alt="Logo"></a>
+		</div>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link"  href="./index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./upcomingEvents.html">Upcoming Events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./pastEvents.html">Past Events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./details.html">Details</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./stats.html">Stats</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="contact_us" class="option">
+		<form class="row g-3 d-flex flex-column shadowCard">
+				<h3 class="txt_title">Formulario Registro</h3>
+				<div class="col-mb-4">
+					<label for="name_input" class="form-label">Insert name</label>
+					<input type="text" class="form-control" id="name_input">
+				</div>
+				<div class="col-mb-4">
+					<label for="email_input" class="form-label">Email address</label>
+					<input type="email" class="form-control" id="email_input" aria-describedby="emailHelp">
+				</div>
+				<div class="col-mb-4">
+					<label for="message_input" class="form-label">Insert your message</label>
+					<textarea class="form-control" id="message_input" rows="3"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+	</div>
+	<footer id="fooIndex" class="col d-flex justify-content-center mt-5">
+		<ul class="icon-red-social p-sm-0">
+			<li><a href="#"><img src="./assets/img/logotipo-de-instagram.png" alt="logo insta"></a></li>
+			<li><a href="#"><img src="./assets/img/facebook.png" alt="logo face"></a></li>
+			<li><a href="#"><img src="./assets/img/whatsapp.png" alt="logo whatsapp"></a></li>
+		</ul>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/vue@next"></script>
+	<script src="./assets/js/index.js"></script>
+</body>
+</html>

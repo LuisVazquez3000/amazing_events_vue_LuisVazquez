@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img{
+	width: 260px;
+	height: 210px;
+}
+
+a > img{
+	padding-left: 1em;
+	width: 160px;
+	height: 110px;
+}
+
+.header-nav{
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact_us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 65vh;
+}
+
+.contact_us form {
+	padding: 5px;
+	height: 440px;
+	margin: auto;
+	margin-bottom: 25rem;
+	border: 1px dashed black;
+}
+
+.icon-red-social {
+	display: flex;
+	margin-bottom: 0;
+}
+
+.icon-red-social li {
+	list-style: none;
+	padding: 0em 1.5em 0 0.5em;
+	margin-top: 0px;
+}
+
+.icon-red-social img {
+	width: 3rem;
+}
+.stats_main{
+min-height: 510px;	
+}
+.option{
+	min-height: 510px;	
+}
+
+footer {
+	height: 15vh;
+	padding: 0.1em;
+	position: relative;
+	bottom: 0;
+	background-color: #55ac99;
+	border: 5px solid rgb(207, 219, 31);
+}
+.icon-red-social {
+	display: flex;
+	margin-bottom: 0px;
+}
+
+.icon-red-social li {
+	list-style: none;
+	padding:0.5em;
+	margin-top: 0px;
+}
+
+.icon-red-social img {
+	width: 60px;
+	height: 45px;
+}
+
+
+.shadowCard {
+	color: black;
+}
+
+.shadowCard:hover {
+	box-shadow: 0px 5px 10px -7px black, 0px -5px 10px -7px black;
+}
+
+.nav-link:hover{
+	text-decoration: underline;
+}
