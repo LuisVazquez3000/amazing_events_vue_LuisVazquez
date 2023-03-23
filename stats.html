@@ -46,7 +46,7 @@
 	</header>
 	<div id="app" class="stats_main">
 		<div class="container tContainer">
-			<table class="table m-auto">
+			<table class="table table-hover m-auto">
 				<thead>
 					<tr><h2>Events Statistics</h2></tr>
 					<tr>
@@ -55,10 +55,15 @@
 						<th scope="col">Event with the larger capacity</th>
 					</tr>
 				</thead>
-				<tbody id="table_1">
+				<tbody id="table_1" v-if="arrayCalculation.length">
+					<tr>
+						<td>{{arrayCalculation[0].name}}: {{(arrayCalculation[0].assistance*100/arrayCalculation[0].capacity).toFixed(2)}}%</td>
+            <td>{{arrayCalculation[1].name}}: {{(arrayCalculation[1].assistance*100/arrayCalculation[1].capacity).toFixed(2)}}%</td>
+            <td>{{arrayCalculation[2].name}}: {{arrayCalculation[2].capacity}}</td>
+					</tr>
 				</tbody>
 			</table>
-			<table class="table m-auto">
+			<table class="table table-hover m-auto">
 				<thead>
 					<tr><h2>Upcoming events statistics by category</h2></tr>
 					<tr>
@@ -67,10 +72,15 @@
 						<th scope="col">percentage of attendace</th>
 					</tr>
 				</thead>
-				<tbody id="table2">
+				<tbody id="table2" v-for="dato of arrayUpcomingnew">
+					<tr>
+						<td>{{dato.category}}</td>
+						<td>${{dato.profits}}</td>
+						<td>{{dato.porcentaje}}%</td>
+					</tr> 
 				</tbody>
 			</table>
-			<table class="table m-auto">
+			<table class="table table-hover m-auto">
 				<thead>
 					<tr><h2>Past events statistics by category</h2></tr>
 					<tr>
@@ -79,8 +89,12 @@
 						<th scope="col">percentage of attendace</th>
 					</tr>
 				</thead>
-				<tbody id="table3">
-					
+				<tbody id="table3" v-for="data of arrayPastnew">
+					<tr>
+						<td>{{data.category}}</td>
+						<td>${{data.profits}}</td>
+						<td>{{data.porcentaje}}%</td>
+					</tr> 
 				</tbody>
 			</table>
 		</div>
